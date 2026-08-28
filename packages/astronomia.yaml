@@ -1,0 +1,68 @@
+# Helpers para o pacote de Detecção de Fenômenos Astronômicos.
+# Ver pyscript/eventos_astronomicos.py e docs/fenomenos-astronomicos.md.
+#
+# Requer a integração "packages" habilitada em configuration.yaml:
+#
+# homeassistant:
+#   packages: !include_dir_named packages
+
+input_boolean:
+  astro_localizacao_manual:
+    name: Astronomia - Usar localização manual
+    icon: mdi:crosshairs-gps
+
+  astro_usar_gps_person:
+    name: Astronomia - Usar GPS do person.guga
+    icon: mdi:crosshairs-gps
+
+input_number:
+  astro_latitude_manual:
+    name: Astronomia - Latitude manual
+    min: -90
+    max: 90
+    step: 0.0001
+    mode: box
+    icon: mdi:latitude
+
+  astro_longitude_manual:
+    name: Astronomia - Longitude manual
+    min: -180
+    max: 180
+    step: 0.0001
+    mode: box
+    icon: mdi:longitude
+
+  astro_elevacao_manual:
+    name: Astronomia - Elevação manual
+    min: -500
+    max: 9000
+    step: 1
+    unit_of_measurement: m
+    mode: box
+    icon: mdi:image-filter-hdr
+
+  astro_janela_busca_dias:
+    name: Astronomia - Janela de busca (dias)
+    min: 7
+    max: 365
+    step: 1
+    initial: 90
+    unit_of_measurement: dias
+    mode: box
+    icon: mdi:calendar-range
+
+  astro_janela_aviso_dias:
+    name: Astronomia - Avisar com quantos dias de antecedência
+    min: 0
+    max: 30
+    step: 1
+    initial: 3
+    unit_of_measurement: dias
+    mode: box
+    icon: mdi:bell-ring-outline
+
+input_text:
+  astro_eventos_notificados_ids:
+    name: Astronomia - Eventos já notificados (uso interno)
+    max: 255
+    icon: mdi:database-outline
