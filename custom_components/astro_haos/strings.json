@@ -1,0 +1,66 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Astro HAOS",
+        "description": "Configure how to detect astronomical phenomena visible from your location.",
+        "data": {
+          "location_source": "Location source",
+          "search_window_days": "Search window (days)",
+          "warning_window_days": "Notify how many days in advance",
+          "notify_service": "Notification service (domain.service)"
+        }
+      },
+      "manual": {
+        "title": "Manual coordinates",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "elevation": "Elevation (m)"
+        }
+      },
+      "person": {
+        "title": "GPS source",
+        "data": {
+          "person_entity": "Person entity"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Astro HAOS is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Astro HAOS - settings",
+        "data": {
+          "location_source": "Location source",
+          "search_window_days": "Search window (days)",
+          "warning_window_days": "Notify how many days in advance",
+          "notify_service": "Notification service (domain.service)"
+        }
+      },
+      "manual": {
+        "title": "Manual coordinates",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "elevation": "Elevation (m)"
+        }
+      },
+      "person": {
+        "title": "GPS source",
+        "data": {
+          "person_entity": "Person entity"
+        }
+      }
+    }
+  },
+  "services": {
+    "buscar_eventos": {
+      "name": "Search astronomical events",
+      "description": "Forces a new search for astronomical phenomena and updates sensor.proximo_evento_astronomico immediately."
+    }
+  }
+}

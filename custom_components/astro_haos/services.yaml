@@ -1,0 +1,6 @@
+buscar_eventos:
+  name: Buscar eventos astronômicos
+  description: >-
+    Força uma nova busca de fenômenos astronômicos e atualiza
+    sensor.proximo_evento_astronomico imediatamente, sem esperar a
+    atualização diária das 6h.
