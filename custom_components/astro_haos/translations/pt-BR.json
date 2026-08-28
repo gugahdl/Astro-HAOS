@@ -1,0 +1,66 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Astro HAOS",
+        "description": "Configure como detectar fenômenos astronômicos visíveis a partir da sua localização.",
+        "data": {
+          "location_source": "Fonte de localização",
+          "search_window_days": "Janela de busca (dias)",
+          "warning_window_days": "Avisar com quantos dias de antecedência",
+          "notify_service": "Serviço de notificação (dominio.servico)"
+        }
+      },
+      "manual": {
+        "title": "Coordenadas manuais",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "elevation": "Elevação (m)"
+        }
+      },
+      "person": {
+        "title": "Fonte de GPS",
+        "data": {
+          "person_entity": "Entidade de pessoa"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "O Astro HAOS já está configurado."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Astro HAOS - configurações",
+        "data": {
+          "location_source": "Fonte de localização",
+          "search_window_days": "Janela de busca (dias)",
+          "warning_window_days": "Avisar com quantos dias de antecedência",
+          "notify_service": "Serviço de notificação (dominio.servico)"
+        }
+      },
+      "manual": {
+        "title": "Coordenadas manuais",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "elevation": "Elevação (m)"
+        }
+      },
+      "person": {
+        "title": "Fonte de GPS",
+        "data": {
+          "person_entity": "Entidade de pessoa"
+        }
+      }
+    }
+  },
+  "services": {
+    "buscar_eventos": {
+      "name": "Buscar eventos astronômicos",
+      "description": "Força uma nova busca de fenômenos astronômicos e atualiza sensor.proximo_evento_astronomico imediatamente."
+    }
+  }
+}

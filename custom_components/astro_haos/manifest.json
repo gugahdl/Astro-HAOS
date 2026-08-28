@@ -1,0 +1,11 @@
+{
+  "domain": "astro_haos",
+  "name": "Astro HAOS",
+  "codeowners": ["@gugahdl"],
+  "config_flow": true,
+  "documentation": "https://github.com/gugahdl/Astro-HAOS",
+  "issue_tracker": "https://github.com/gugahdl/Astro-HAOS/issues",
+  "iot_class": "calculated",
+  "requirements": ["astronomy-engine==2.1.19"],
+  "version": "1.0.0"
+}
